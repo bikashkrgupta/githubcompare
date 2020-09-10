@@ -13,5 +13,5 @@ Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `Day 2`
-Basic feteching data from github link.Still Searching is not functioning.
-and pushing code to https://github.com/bikashkrgupta/githubcompare.git
+feteched data from github Api.Searching is not working.
+and pushed code to https://github.com/bikashkrgupta/githubcompare.git
