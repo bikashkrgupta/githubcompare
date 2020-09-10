@@ -2,11 +2,10 @@ import React, { useState, useEffect} from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
 import { Card } from 'antd';
-import { Input } from 'antd';
 import './App.css';
-//import Form from 'antd/lib/form/Form';
-//import { findRenderedDOMComponentWithTag, findRenderedComponentWithType } from 'react-dom/test-utils';
-const { Search } = Input;
+import { Input,Button } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+
 
 function App() {
   const [name,setName]=useState('');
@@ -55,7 +54,7 @@ function App() {
   setAvatar(avatar_url);
   };
 
-const handleSearch=(e) => {
+const handleSearch = (e) => {
   setUserInput(e.target.value)
 }
 const handleSubmit = () =>
@@ -81,14 +80,12 @@ const handleSubmit = () =>
       
       <div className='search'>
       
-      <Search 
-      onSubmit={handleSubmit}
-      placeholder="input github username"
-      enterButton="Search"
-      size="medium"
-      onSearch={handleSearch}
-    />
-     
+      <Input size="large" placeholder="Enter username" prefix={<UserOutlined />} onChange={handleSearch} />
+    
+    <Button type="primary" onClick={handleSubmit}>search</Button>
+    
+    <hr/>
+
     </div>
     {error ? (<h1> {error} </h1>):(
         <div className="card">

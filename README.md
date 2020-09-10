@@ -15,3 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### `Day 2`
 feteched data from github Api.Searching is not working.
 and pushed code to https://github.com/bikashkrgupta/githubcompare.git
+
+later
+search functionality added.
