@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  padding:40px;
+  background-color: rgb(234,221,224);
+
+}
+.search{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+}
+.card{
+  display: flex;
+  justify-content: center;
+}
